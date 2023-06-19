@@ -8,19 +8,21 @@ export function MathForm({ answer }) {
       onSubmit={(event) => {
         event.preventDefault();
         const { userAnswer } = event.target.elements;
-        console.log(userAnswer.value);
 
         if (userAnswer.value === `${answer}`) {
-          console.log(`You did it! The answer was ${answer}`);
           setOutcome(`You did it! The answer was ${answer}`);
         } else {
-          console.log(`You failed! The answer was ${answer}`);
           setOutcome(`You failed! The answer was ${answer}`);
         }
       }}
     >
       <div className="formInputs">
-        <input name="userAnswer" id="userAnswer" type="number" />
+        <input
+          name="userAnswer"
+          id="userAnswer"
+          type="number"
+          disabled={!!outcome}
+        />
         <button type="submit">submit</button>
       </div>
       <p className="outcome">{outcome}</p>
