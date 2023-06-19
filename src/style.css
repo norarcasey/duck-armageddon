@@ -1,26 +1,84 @@
-h1,
-p {
-  font-family: Lato;
+/* 721108 */
 
+h1,
+p,
+button {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   color: #ea9da5;
+  text-align: center;
+}
+
+h1 {
+  transform: rotate(-7deg);
+  font-weight: 100;
 }
 
 .game {
   background-image: url('./duck-armageddon-clear-whiteboard.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
-  min-width: 500px;
-  max-width: 700px;
-  min-height: 400px;
   display: flex;
   justify-content: flex-end;
+  min-width: 712px;
+  max-width: 712px;
+  min-height: 400px;
 }
 
 .form {
   width: 30%;
   padding-top: 3%;
+  padding-right: 10px;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  transform: rotate(-7deg);
+}
+
+button {
+  border: solid 1px #ea9da5;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  color: #ea9da5;
+  background-color: #721108;
+  width: 50%;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+input {
+  background: none;
+  border: none;
+}
+input:focus {
+  color: #ea9da5;
+  background: #721108;
+  border: 1px solid grey;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  color: #ea9da5;
+  background-color: #721108;
+  width: 80%;
+  height: 30px;
+  font-size: 1.5rem;
 }
 
 .outcome {
-  padding-top: 25%;
+  padding-top: 11%;
+  transform: rotate(-5deg);
 }
