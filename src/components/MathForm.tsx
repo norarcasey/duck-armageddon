@@ -22,7 +22,7 @@ export function MathForm({ answer }) {
       {/* Restrict the input to numbers for math */}
       <input name="userAnswer" id="userAnswer" type="number" />
       <button type="submit">submit</button>
-      <p>{outcome}</p>
+      <p className="outcome">{outcome}</p>
     </form>
   );
 }

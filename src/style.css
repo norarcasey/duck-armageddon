@@ -1,12 +1,26 @@
 h1,
 p {
   font-family: Lato;
+
+  color: #ea9da5;
 }
 
 .game {
-  background-image: url('./duck-armageddon.png');
+  background-image: url('./duck-armageddon-clear-whiteboard.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
   min-width: 500px;
+  max-width: 700px;
   min-height: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form {
+  width: 30%;
+  padding-top: 3%;
+}
+
+.outcome {
+  padding-top: 25%;
 }
