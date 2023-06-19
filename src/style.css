@@ -1,3 +1,12 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+
+.game {
+  background-image: url('./duck-armageddon.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  min-width: 500px;
+  min-height: 400px;
 }

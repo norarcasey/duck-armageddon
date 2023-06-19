@@ -25,7 +25,7 @@ export default function App() {
    */
 
   return (
-    <div>
+    <div className="game">
       <Problem problem={problem} />
       <MathForm answer={answer} />
     </div>
