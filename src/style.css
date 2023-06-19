@@ -19,14 +19,15 @@ h1 {
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
-  min-width: 712px;
-  max-width: 712px;
   min-height: 400px;
+  max-width: 708px;
+  background-position: right;
+  min-width: 400px;
 }
 
 .form {
-  width: 30%;
-  padding-top: 3%;
+  width: 250px;
+  padding-top: 10px;
   padding-right: 10px;
 }
 
@@ -80,5 +81,5 @@ input {
 
 .outcome {
   padding-top: 11%;
-  transform: rotate(-5deg);
+  transform: rotate(-6deg);
 }
