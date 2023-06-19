@@ -38,11 +38,13 @@ export function useMathProblem(difficulty: ProblemDifficulty) {
   // get the operator first
 
   const operator = getRandomOperator();
-  const leftSideNumber = getRandomNumber(range);
-  const rightSideNumber =
-    operator === '/'
-      ? getRandomNumber([4, range[1] / getRandomNumber([4, 13])])
-      : getRandomNumber(range);
+  const isDivision = operator === '/';
+  const leftSideNumber = isDivision
+    ? getRandomNumber([350, 700])
+    : getRandomNumber(range);
+  const rightSideNumber = isDivision
+    ? getRandomNumber([7, 23])
+    : getRandomNumber(range);
 
   const problem = `${leftSideNumber} ${operator} ${rightSideNumber}`;
 
