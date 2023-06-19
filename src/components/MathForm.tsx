@@ -20,7 +20,6 @@ export function MathForm({ answer }) {
       }}
     >
       <div className="formInputs">
-        {/* Restrict the input to numbers for math */}
         <input name="userAnswer" id="userAnswer" type="number" />
         <button type="submit">submit</button>
       </div>
