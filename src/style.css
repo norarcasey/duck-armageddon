@@ -1,4 +1,8 @@
 /* 721108 */
+body {
+  background-color: #000;
+}
+
 ::placeholder {
   color: #cfa9ad;
 }
@@ -7,12 +11,12 @@ p,
 button {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   color: #ea9da5;
-  text-align: center;
 }
 
-h1 {
+.game h1 {
   transform: rotate(-7deg);
   font-weight: 100;
+  text-align: center;
 }
 
 .game {

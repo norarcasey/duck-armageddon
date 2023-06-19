@@ -25,10 +25,17 @@ export default function App() {
    */
 
   return (
-    <div className="game">
-      <div className="form">
-        <Problem problem={problem} />
-        <MathForm answer={answer} />
+    <div className="wrapper">
+      <h1>Duck Armageddon</h1>
+      <p>
+        Your duck wife is being held hostage and you need to solve a math
+        problem to save them!
+      </p>
+      <div className="game">
+        <div className="form">
+          <Problem problem={problem} />
+          <MathForm answer={answer} />
+        </div>
       </div>
     </div>
   );
