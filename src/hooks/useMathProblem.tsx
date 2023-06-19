@@ -3,9 +3,11 @@ function getRandomNumber(range: number[]): number {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-function getRandomOperator() {
+function getRandomOperator(difficulty: ProblemDifficulty = 'hard') {
   const operators = ['/', '*', '-', '+'];
-  const index = getRandomNumber([0, 3]);
+
+  const endRange = difficulty === 'hard' ? 2 : 4;
+  const index = getRandomNumber([0, endRange]);
 
   return operators[index];
 }

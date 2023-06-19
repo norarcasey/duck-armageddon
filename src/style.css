@@ -1,5 +1,7 @@
 /* 721108 */
-
+::placeholder {
+  color: #cfa9ad;
+}
 h1,
 p,
 button {

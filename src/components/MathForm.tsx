@@ -21,6 +21,7 @@ export function MathForm({ answer }) {
           name="userAnswer"
           id="userAnswer"
           type="number"
+          placeholder="OMG, Hurry!"
           disabled={!!outcome}
         />
         <button type="submit">submit</button>
