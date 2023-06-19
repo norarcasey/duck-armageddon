@@ -28,8 +28,8 @@ export default function App() {
     <div className="wrapper">
       <h1>Duck Armageddon</h1>
       <p>
-        Your duck wife is being held hostage and you need to solve a math
-        problem to save them!
+        A duck's wife is being held hostage and you need to solve a math problem
+        to save them!
       </p>
       <div className="game">
         <div className="form">

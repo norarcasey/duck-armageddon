@@ -34,9 +34,17 @@ export function useMathProblem(difficulty: ProblemDifficulty) {
       break;
   }
 
-  const problem = `${getRandomNumber(
-    range
-  )} ${getRandomOperator()} ${getRandomNumber(range)}`;
+  // The problem is that rounding is killing the difficulty for division
+  // get the operator first
+
+  const operator = getRandomOperator();
+  const leftSideNumber = getRandomNumber(range);
+  const rightSideNumber =
+    operator === '/'
+      ? getRandomNumber([4, range[1] / getRandomNumber([4, 13])])
+      : getRandomNumber(range);
+
+  const problem = `${leftSideNumber} ${operator} ${rightSideNumber}`;
 
   // NOTE: eval can be very risky to use,
   // but this is just a silly math game.
